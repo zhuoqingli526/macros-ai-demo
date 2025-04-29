@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  get("/blank_form", { :controller => "macros", :action => "display_form" })
 
   # Solutions below. Don't peek until you try it yourself and get stuck!
 
