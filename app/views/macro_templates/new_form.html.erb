@@ -2,7 +2,7 @@
 
 <p>Send us an image and/or a description of a meal and we'll ask AI to estimate how many calories and macronutrients it contains:</p>
 
-<form action="/process_inputs" method="post">
+<form action="/process_inputs" method="post" enctype="multipart/form-data">
   <div>
   <label>Image:<label>
   <input type="file" name = "image_param">
@@ -10,7 +10,7 @@
 
   <div>
   <label>Description:<label>
-  <textarea name="description_param" id=""></textarea>
+  <textarea name="description_param"></textarea>
   </div>
 
   <button>Estimate!</button>
